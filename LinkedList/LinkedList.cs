@@ -94,5 +94,21 @@ namespace LinkedList
             newNode.next = null;
             return head;
         }
+
+        internal void Search(int value)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("Given value: " + value + " is present in Linked list");
+                    return;
+                }
+                temp = temp.next;
+            }
+            if (temp == null)
+                Console.WriteLine("Given value: " + value + " is not present in Linked list");
+        }
     }
 }
