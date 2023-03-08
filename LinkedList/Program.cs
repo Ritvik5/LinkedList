@@ -8,7 +8,8 @@
             list.Add(56);
             list.Add(70);
             list.InsertAtParticularPosition(2, 30);
-            list.RemoveFirstNode();
+            //list.RemoveFirstNode();
+            list.RemoveLastNode();
             list.Display();
         }
     }
